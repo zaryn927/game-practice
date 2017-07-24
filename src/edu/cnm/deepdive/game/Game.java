@@ -26,8 +26,8 @@ public class Game extends JFrame{
   
   private PlayerCharacter character; //JPanel
   private boolean uiSetup = false;
-
   
+
   public Game(String title) {
     super(title);
   }
@@ -73,7 +73,7 @@ public class Game extends JFrame{
         character.characterImage = character.drawCharacter(3, 1, character.x, character.y);
         character.setCharacter();
       });
-      addKeyBinding(character, KeyEvent.VK_LEFT   , "left", (evt) -> {
+      addKeyBinding(character, KeyEvent.VK_LEFT, "left", (evt) -> {
         character.x -= 10;
         character.characterImage = character.drawCharacter(4, 1, character.x, character.y);
         character.setCharacter();
